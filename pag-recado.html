@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/css-pag-recados/main.css">
+    <link rel="stylesheet" href="./css/css-pag-recados/button.css">
+    <link rel="stylesheet" href="./css/css-pag-recados/records.css">
+    <link rel="stylesheet" href="./css/css-pag-recados/modal.css">
+    
+    <title>Página de recados</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="header-title">Lista de recados</h1>
+    </header>
+    <main>
+
+        <button  type="button" class="button blue mobile" id="cadastrarRecado">Cadastrar recado</button>
+        <table id="tableRecado" class="records">
+
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Detalhamento</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+          <tbody>
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+            
+                </tr>
+
+            </tbody> 
+        </table>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h2>Novo recado</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+
+                <form id="form" class="modal-form">
+                    <input type="text" id="descricao" data-="new" class="modal-field" placeholder="Descrição" required>
+                    <input type="text" id="detalhar" class="modal-field" placeholder="Detalhamento" required>
+                </form>
+
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+    <script src="./script-recado.js" defer></script>
+</body>
+</html>
